@@ -18,12 +18,12 @@ class ViewController: UIViewController {
         numberTextLabel.text = String(number)
     }
 
-    @IBAction func didTapCountUpButton(_ sender: Any) {
+    @IBAction private func didTapCountUpButton(_ sender: Any) {
         number += 1
         numberTextLabel.text = String(number)
     }
 
-    @IBAction func didTapClearButton(_ sender: Any) {
+    @IBAction private func didTapClearButton(_ sender: Any) {
         number = 0
         numberTextLabel.text = String(number)
     }
